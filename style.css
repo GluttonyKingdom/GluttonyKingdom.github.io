@@ -1,0 +1,87 @@
+/*GÉNÉRAL*/
+*{
+    padding: 0;
+    margin:0;
+}
+header,html,body,section{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    scroll-behavior: smooth;
+}
+/*PAGE SECTION*/
+section{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Images/biscuits.jpg);
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+section div{
+    display: flex;
+    flex-direction: column;
+}
+section div p, section div h1 {
+    text-align: center;
+    color:rgb(228, 225, 225);
+}
+#bienvenue{
+    font-size: 2.5em;
+    text-transform : uppercase;
+    font-family: 'Merriweather', serif;
+}
+#sur{
+    font-size: 1.5em;
+}
+#titre{
+    font-size: 3.5em;
+    font-family: 'Merriweather', serif;
+}
+#slogan{
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight : lighter;
+}
+button{
+    margin: auto;
+    height: 35px;
+    width : 50%;
+    border-radius: 50px;
+    margin-top: 15px;
+    background-color: #C0682A;
+    border : 3px solid #312b2e;
+}
+button a{
+    font-size :25px;
+    color: #383134;
+    text-decoration: none;
+    text-align: center;
+}
+a:hover{
+    color: white;
+}
+button:hover{
+    background-color: #7c4014;
+    border : 3px solid white;
+}
+
+/*MEDIA VERSION MOBILE*/
+@media (max-width:600px){
+    #bienvenue, button a{
+        font-size : 1.5em;
+    }
+    #sur, #slogan{
+        font-size: 0.9em;
+    }
+    #titre{
+        font-size : 1.25em;
+    }
+    button{
+        height : 35px;
+        margin-top: 5px;
+        border: 2px solid #312b2e;
+    }
+    
+}

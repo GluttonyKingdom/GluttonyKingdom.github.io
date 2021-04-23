@@ -1,0 +1,245 @@
+/*GÉNÉRAL*/
+*{
+    padding: 0;
+    margin: 0;
+}
+header,html,body,section{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    scroll-behavior: smooth;
+}
+body, html{
+    display: flex;
+    flex-direction: column;
+    height : 244%;
+    color : #312b2e;
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-family: 'Merriweather', serif;
+    font-size : 1.6em;
+}
+h3{
+    font-size : 1.4em;
+}
+p, li{
+    font-size : 1.1em;
+}
+/*HEADER*/
+#top{
+    height: 4%;
+    display: flex;
+    background-color: #C0682A;
+    border-bottom: 1px solid #312b2e;
+}
+#crown, nav{
+    height:100%;
+    width:50%;
+}
+#crown{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#crown img{
+    height : 60%;
+    width: auto;
+    margin-left : 5%;
+}
+#crown h1{
+    margin :auto 5% auto 3%;
+    color:white;
+    font-size : 2em;
+    font-family: 'Merriweather', serif;
+}
+/*MENU NAV*/
+nav{
+    height : 100%;
+    width:  100%;
+    display:  flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav ul{
+    display :flex;
+    justify-content: flex-end;
+    align-items : center;
+    list-style-type: none;
+}
+nav li a {
+    text-decoration: none;
+    color : white;
+    padding-right: 20px;
+    font-size: 1.3em;
+}
+nav li a:hover{
+    color : #312b2e;
+}
+/*TITLE*/
+#title{
+    height:20%;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#title h1{
+    border-left: 3px solid  #C0682A;
+    padding-left: 1%;
+    font-size: 2em;
+}
+#title p{
+    border : 2px solid #312b2e;
+    border-radius: 10px;
+    padding: 6px;
+    margin-top : 5px;
+}
+/*INGREDIENTS*/
+.ingredients{
+    height : 50%;
+    display : flex;
+    flex-direction: column;
+}
+.ingredients2{
+    height : 150%;
+    display : flex;
+    flex-direction: column;
+}
+.ingredients_title{
+    display: flex;
+    height : 10%;
+    align-items: center;
+}
+.ingredients_title h2{
+    margin-left: 5%;
+}
+#ingredients_bloc_liste{
+    display: flex;
+    flex-wrap: wrap;
+    height:90%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #312b2e;
+}
+.bloc{
+    width : 32%;
+    height : 90%;
+    border-left: 2px solid white;
+    color:white;
+    display:flex;
+    flex-direction: column;
+}
+.bloc div {
+   height : 20%;
+   display: flex;
+   width:100%;
+}
+.bloc div h3{
+    text-align: center;
+    margin:auto;
+}
+.bloc ul{
+    height : 90%;
+    width: 100%;
+    display :flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.bloc ul li{
+    margin-bottom: 3px;
+}
+/*RECETTE*/
+#recette{
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.titles_and_instructions{
+    display: flex;
+    flex-direction: column;
+    height : 30%;
+}
+.recettes_title{
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+.recette_title h3{
+    margin-left : 7%;
+    border-left: 2px solid #C0682A;
+    padding-left: 1%;
+}
+.recette_instructions{
+    height:80%;
+    display: flex;
+}
+.recette_instructions ol{
+    margin: auto;
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.recette_instructions ol li{
+    list-style-type: upper-roman;
+    margin : auto 12%;
+    padding-top : 10px;
+}
+/*FOOTER*/
+footer{
+    border-top: 2px solid #312b2e;
+    height: 20%;
+    background-color : #312b2e;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+footer p{
+    color : white;
+    margin : 10px 10px;
+}
+/*MEDIA MOBILE VERSION*/
+@media (max-width: 600px){
+    body{
+        height : 314%;
+    }
+    #crown h1, #title h1{
+        font-size: 1.2em;
+    } 
+    #nav{
+        font-size: 1.1em;
+    }
+    h2{
+        font-size: 0.9em;
+    }
+    h3{
+        font-size: 0.8em;
+    }
+    p, a, li{
+        font-size: 0.7em;
+    }
+    img{
+        height: 50%;
+    }
+    #ingredients_bloc_liste{
+        flex-direction: column;
+    }
+    .bloc{
+        height: 25%;
+        width: 95%;
+    }
+    .bloc ul{
+        flex-wrap: wrap;
+    }
+    .ingredients2{
+        height: 190%;
+    }
+    .ingredients{
+        height : 80%;
+    }
+}
+244+30 274+40= 314

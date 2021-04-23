@@ -1,0 +1,235 @@
+/*GÉNÉRAL*/
+*{
+    padding: 0;
+    margin: 0;
+}
+header,html,body,section{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height : 155%;
+    color : #312b2e;
+    font-family: 'Montserrat', sans-serif;
+}
+#one{
+    height : 85%;
+}
+#two{
+    height : 70%;
+}
+/*GLOBAL POLICE*/
+h2, span{
+    font-size : 1.5em;
+    font-family: 'Merriweather', serif;
+}
+p{
+    font-size : 1.1em;
+}
+/*HEADER*/
+/*LOGO AND TITLE*/
+#top{
+    height: 14%;
+    display: flex;
+    background-color: #C0682A;
+}
+#crown, nav{
+    height:100%;
+    width:50%;
+}
+#crown{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#crown img{
+    height : 60%;
+    width: auto;
+    margin-left : 5%;
+}
+#crown h1{
+    margin :auto 5% auto 3%;
+    color:white;
+    font-size : 2em;
+    font-family: 'Merriweather', serif;
+}
+/*MENU NAV*/
+nav{
+    height : 100%;
+    width:  100%;
+    display:  flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav ul{
+    display :flex;
+    justify-content: flex-end;
+    align-items : center;
+    list-style-type: none;
+}
+nav li a {
+    text-decoration: none;
+    color : white;
+    padding-right: 20px;
+    font-size:1.3em;
+}
+nav li a:hover{
+    color : #312b2e;
+}
+/*SECTION REDIRECTION RECETTE*/
+#rubriques{
+    height : 86%;
+    border-top: 1px solid #312b2e;
+}
+.title_recettes{
+    height:20%;
+    display : flex;
+    align-items:center;
+}
+.title_recettes h2{
+    margin-left: 5%;
+    font-family: 'Merriweather', serif;
+}
+#contenu_recettes{
+    display: flex;
+    justify-content: space-around;
+    align-items : center;
+    height : 80%;
+}
+.bloc1, .bloc2{
+    height : 60%;
+    width : 30%;
+    display : flex;
+    box-shadow: 0px 0px 10px  #312b2e;
+    background-color:#312b2e ;
+}
+.bloc1 a , .bloc2 a {
+    text-decoration : none;
+    height: 100%;
+    width:100%;
+    position: relative;
+    display: flex;
+}
+.bloc1 a span, .bloc2 a span{
+    font-size : 1.6em;
+    color:#312b2e;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bloc1 a img, .bloc2 a img{
+    width:90%;
+    height:85%;
+    margin:auto;
+}
+.bloc1:hover, .bloc2:hover{
+    transform: scale(1.1);
+}
+
+#container{
+    display : flex;
+    flex-direction: column;
+    height : 80%;
+}
+/*ABOUT SECTION*/
+#about{
+    background-color: #C0682A;
+    color : white;
+}
+#about, #contact{
+    height : 50%;
+    border-top: 1px solid #312b2e;
+    display:flex;
+    flex-direction:column;
+}
+#about_title{
+    height:30%;
+    display : flex;
+    align-items:center;
+}
+#about_title h2{
+    margin-left: 5%;
+}
+/*CONTACT SECTION */
+#contact_title{
+    height:30%;
+    display : flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+#contact_title h2{
+    margin-right: 5%;
+}
+#container_p1, #container_p2{
+    height: 70%;
+}
+#container_p1 p{
+    margin : 10px 10%;
+}
+#container_p2 p{
+    margin : 10px 10%;
+    text-align:right;
+}
+/*FOOTER*/
+footer{
+    border-top: 2px solid #312b2e;
+    height: 20%;
+    background-color : #312b2e;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+footer p{
+    color : white;
+    margin : 10px 10px;
+}
+/*MEDIA MOBILE VERSION*/
+@media (max-width: 600px){
+    #crown h1{
+        font-size: 1em;
+    }
+    h2, #nav{
+        font-size: 0.9em;
+    }
+    h3, #lien_bloc{
+        font-size: 0.8em;
+    }
+    p{
+        font-size: 0.6em;
+    }
+    #contenu_recettes{
+        flex-direction: column;
+    }
+    .bloc1, .bloc2{
+        height: 40%;
+        width: 55%;
+    }
+    #img_crown{
+        height:50%;
+    }
+    .bloc1:active, .bloc2:active{
+        transform: scale(0.90);
+    }
+    #about_title, #contact_title{
+        height: 20%;
+    }
+    #container_p1, #container_p2{
+        height: 80%;
+    }
+    #about{
+        height: 60%;
+    }
+    #contact{
+        height: 40%;
+    }
+    .bloc1 a img, .bloc2 a img{
+        width:95%;
+        height:80%;
+    }
+}
